@@ -14,7 +14,7 @@ categorical = [
 ]
 
 
-# loading in the model to predict on the data
+# loading the model to predict on the data
 pickle_in = open("../model.pkl", "rb")
 classifier = pickle.load(pickle_in)
 
@@ -26,9 +26,6 @@ data = data.drop("target", axis=1)
 def welcome():
     return "welcome all"
 
-
-# defining the function which will make the prediction using
-# the data which the user inputs
 def prediction(features):
     columns = [
         "age",
@@ -58,21 +55,9 @@ def prediction(features):
     return prediction
 
 
-# this is the main function in which we define our webpage
 def main():
     st.set_page_config(layout="wide")
-    # giving the webpage a title
     st.title("Heart Disease Prediction")
-
-    # here we define some of the front end elements of the web page like
-    # the font and background color, the padding and the text to be displayed
-
-    # this line allows us to display the front end aspects we have
-    # defined in the above code
-    # st.markdown(html_temp, unsafe_allow_html=True)
-
-    # the following lines create text boxes in which the user can enter
-    # the data required to make the prediction
     col1, col2, col3 = st.columns(3, gap="large")
 
     with col1:
@@ -119,11 +104,6 @@ def main():
         slp = st.selectbox("Inclinação do pico do segmento ST no exercício", slpOptions)
 
         result = ""
-
-        # the below line ensures that when the button called 'Predict' is clicked,
-        # the prediction function defined above is called to make the prediction
-        # and store it in the variable result
-
         if st.button("Predict"):
             result = prediction(
                 [
