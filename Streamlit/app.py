@@ -123,7 +123,7 @@ def main():
         if result == "Sem doença":
             st.success("A pessoa está saudável")
         if result == "Doença Cardíaca":
-            st.success("A pessoa pode apresentar alguma doença cardíaca")
+            st.success("A pessoa pode apresentar alguma doença cardíaca. Procure um atendimento médico!")
 
 
 if __name__ == "__main__":
