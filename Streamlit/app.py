@@ -3,6 +3,9 @@ import pickle
 import sklearn
 import streamlit as st
 from sklearn.preprocessing import Normalizer
+import sys
+import path
+
 
 continuous = ["age", "resting bp s", "cholesterol", "max heart rate", "oldpeak"]
 categorical = [
@@ -14,6 +17,9 @@ categorical = [
     "ST slope",
 ]
 
+
+dir = path.Path(__file__).abspath()
+sys.path.append(dir.parent.parent)
 
 # loading the model to predict on the data
 pickle_in = open("model.pkl", "rb")
