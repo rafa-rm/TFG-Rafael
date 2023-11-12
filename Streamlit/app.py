@@ -3,7 +3,6 @@ import pickle
 import sklearn
 import streamlit as st
 from sklearn.preprocessing import Normalizer
-import sys
 from pathlib import Path
 
 
