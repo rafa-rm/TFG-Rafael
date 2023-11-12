@@ -16,7 +16,7 @@ categorical = [
 
 
 # loading the model to predict on the data
-pickle_in = open("../model.pkl", "rb")
+pickle_in = open("model.pkl", "rb")
 classifier = pickle.load(pickle_in)
 
 # loading the dataset used in model creation
