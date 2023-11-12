@@ -1,6 +1,5 @@
 import pandas as pd
 import pickle
-import sklearn
 import streamlit as st
 from sklearn.preprocessing import Normalizer
 from pathlib import Path
