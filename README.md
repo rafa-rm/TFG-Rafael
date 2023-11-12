@@ -15,9 +15,12 @@ Assim, o melhor modelo, fornecendo uma verificação inicial instantânea de alg
 ## Metodologia
 
 O conjunto de dados escolhido foi desenvolvido combinando 5 datasets, a partir de 11 características comuns, contendo 1190 entradas de dados, no total.
-Primeiramente, será usada a biblioteca Pandas para realizar a análise exploratória, de modo a obter informações iniciais sobre os dados. 
-Em seguida, será usada a biblioteca Scikit Learn para a criação, processamento e validação dos modelos de aprendizado de máquina. 
-Por fim, a biblioteca Streamlit será empregada na construção de uma interface gráfica responsiva para utilização do melhor modelo.
+
+Primeiramente, foi usada a biblioteca Pandas para realizar a análise exploratória, de modo a obter informações iniciais sobre os dados. 
+
+Em seguida, usou-se a biblioteca Scikit Learn para a criação, processamento e validação dos modelos de aprendizado de máquina. 
+
+Por fim, a biblioteca Streamlit foi empregada na construção de uma interface gráfica responsiva para utilização do melhor modelo.
 
 ## Resultados
 
