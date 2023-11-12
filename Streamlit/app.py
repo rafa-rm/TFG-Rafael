@@ -67,7 +67,7 @@ def main():
     col1, col2, col3 = st.columns(3, gap="large")
 
     with col1:
-        age = st.slider("Idade", 23, 77, 30)
+        age = st.slider("Idade", 28, 77, 36)
 
         rbps = st.slider("Pressão sanguínea em repouso (mm Hg)", 92, 200, 110)
 
