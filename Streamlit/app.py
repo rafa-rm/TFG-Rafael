@@ -4,7 +4,7 @@ import sklearn
 import streamlit as st
 from sklearn.preprocessing import Normalizer
 import sys
-import path
+from pathlib import Path
 
 
 continuous = ["age", "resting bp s", "cholesterol", "max heart rate", "oldpeak"]
@@ -18,11 +18,10 @@ categorical = [
 ]
 
 
-dir = path.Path(__file__).abspath()
-sys.path.append(dir.parent.parent)
+pkl_path = Path(__file__).parents[1] / 'model.pkl'
 
 # loading the model to predict on the data
-pickle_in = open("model.pkl", "rb")
+pickle_in = open(pkl_path, "rb")
 classifier = pickle.load(pickle_in)
 
 # loading the dataset used in model creation
