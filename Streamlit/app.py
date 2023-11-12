@@ -20,7 +20,7 @@ pickle_in = open("model.pkl", "rb")
 classifier = pickle.load(pickle_in)
 
 # loading the dataset used in model creation
-data = pd.read_csv("../data_processed.csv")
+data = pd.read_csv("data_processed.csv")
 data = data.drop("target", axis=1)
 
 
