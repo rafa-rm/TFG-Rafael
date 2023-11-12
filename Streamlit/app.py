@@ -18,7 +18,7 @@ categorical = [
 ]
 
 
-pkl_path = Path(__file__).parents[1] / 'model.pkl'
+pkl_path = Path(__file__).parents[1] / 'Streamlit/model.pkl'
 
 # loading the model to predict on the data
 pickle_in = open(pkl_path, "rb")
