@@ -24,8 +24,10 @@ pkl_path = Path(__file__).parents[1] / 'Streamlit/model.pkl'
 pickle_in = open(pkl_path, "rb")
 classifier = pickle.load(pickle_in)
 
+data_path = Path(__file__).parents[1] / 'Streamlit/data_processed.csv'
+
 # loading the dataset used in model creation
-data = pd.read_csv("data_processed.csv")
+data = pd.read_csv(data_path)
 data = data.drop("target", axis=1)
 
 
